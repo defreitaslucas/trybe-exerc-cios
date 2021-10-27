@@ -1,0 +1,12 @@
+O que eu vou aprender na trybe:
+
+-Unix
+-Bash
+<<<<<<< HEAD
+- Git
+- HTML
+- CSS
+=======
+- Javascript
+- React
+>>>>>>> trybe-skills-updates
