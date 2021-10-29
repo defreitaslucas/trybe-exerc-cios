@@ -1,4 +1,4 @@
-h1, p{
+/* h1, p{ 
     text-align: center;
 }
 li:hover{
@@ -9,4 +9,43 @@ li:active{
 }
 ol, ul{
     list-style: none;
+} */
+
+div:hover{
+    border-width: 2px;
+    border-style: solid;
+}
+.primaria{
+    border-color: red;
+}
+.secundaria{
+    border-color: green;
+}
+.complementar{
+    border-color: blue;
+    width: 400px;
+}
+.escura{
+    border-color: black;
+}
+.clara{
+    border-color: yellow;
+}
+.primaria h3{
+    font-family: sans-serif;
+    font-style: italic;
+}
+.secundaria h3{
+    font-family: 'Courier New';
+}
+.complementar h3{
+    font-family: monospace;
+    font-style: italic;
+}
+.escura h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.clara h3{
+    font-family:Georgia;
+    font-style: italic;
 }
