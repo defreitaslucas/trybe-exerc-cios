@@ -17,7 +17,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/arquivoCodigo2.js"
+      "program": "${file}"
     }
   ]
 }
