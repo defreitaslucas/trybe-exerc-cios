@@ -33,6 +33,32 @@ if (numbers.length == 50){
 console.log(numbers)
 console.log(numbers.length)
 
+//algoritimo 3
+let player1 = 'pedra';
+let player2 = 'papel';
+
+if((player1 == 'pedra' && player2 == 'pedra') || (player1 == 'tesoura' && player2 == 'tesoura') || (player1 == 'papel' && player2 == 'papel')){
+    console.log("A Ties");
+}
+else if(player1 == 'pedra' && player2 == 'tesoura'){
+    console.log("player 1 won")
+}
+else if(player1 == 'pedra' && player2 == 'papel'){
+    console.log("player 2 won")
+}
+else if(player1 == 'tesoura' && player2 == 'pedra'){
+    console.log("player 2 won")
+}
+else if(player1 == 'tesoura' && player2 == 'papel'){
+    console.log("player 1 won")
+}
+else if(player1 == 'papel' && player2 == 'pedra'){
+    console.log("player 1 won")
+}
+else if(player1 == 'papel' && player2 == 'tesoura'){
+    console.log("player 2 won")
+}
+
 //algoritimo 4
 let idade = 20;
 
@@ -44,3 +70,16 @@ else {
 }
 
 //algoritimo 5
+let carolzitaIdade = 20;
+let muriloIdade = 34;
+let baetaIdade = 33;
+
+if (muriloIdade < carolzitaIdade && muriloIdade < baetaIdade){
+    console.log(muriloIdade +" Murilo é a pessoa mais nova.")
+}
+else if (baetaIdade < carolzitaIdade && baetaIdade < muriloIdade){
+    console.log(baetaIdade +" Baêta é a pessoa mais nova.")
+}
+else if (carolzitaIdade < muriloIdade && carolzitaIdade < baetaIdade){
+    console.log(carolzitaIdade +" Carolzita é a pessoa mais nova.")
+}
