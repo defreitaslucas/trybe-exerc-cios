@@ -14,24 +14,24 @@
 // "Pessoa" é a mais nova.
 ​
 ​//algoritimo 1
-let sum = 0;
-for(let index = 1; index <= 1000; index+= 1){
-    sum = sum + index;
-}
-console.log("A soma de 1 a 1000 é: ", sum);
+// let sum = 0;
+// for(let index = 1; index <= 1000; index+= 1){
+//     sum = sum + index;
+// }
+// console.log("A soma de 1 a 1000 é: ", sum);
 
-//algoritimo 2
-let numbers = [];
-for (let index = 2; index <= 150; index += 1){
-    if(index % 3 == 0){
-        numbers.push(index)
-    }
-}
-if (numbers.length == 50){
-    console.log("Mensagem Secreta")
-}
-console.log(numbers)
-console.log(numbers.length)
+// //algoritimo 2
+// let numbers = [];
+// for (let index = 2; index <= 150; index += 1){
+//     if(index % 3 == 0){
+//         numbers.push(index)
+//     }
+// }
+// if (numbers.length == 50){
+//     console.log("Mensagem Secreta")
+// }
+// console.log(numbers)
+// console.log(numbers.length)
 
 //algoritimo 3
 let player1 = 'pedra';
@@ -60,26 +60,26 @@ else if(player1 == 'papel' && player2 == 'tesoura'){
 }
 
 //algoritimo 4
-let idade = 20;
+// let idade = 20;
 
-if (idade >= 18){
-    console.log("Pessoa maior de idade.")
-}
-else {
-    console.log("Pessoa menor de idade.")
-}
+// if (idade >= 18){
+//     console.log("Pessoa maior de idade.")
+// }
+// else {
+//     console.log("Pessoa menor de idade.")
+// }
 
-//algoritimo 5
-let carolzitaIdade = 20;
-let muriloIdade = 34;
-let baetaIdade = 33;
+// //algoritimo 5
+// let carolzitaIdade = 20;
+// let muriloIdade = 34;
+// let baetaIdade = 33;
 
-if (muriloIdade < carolzitaIdade && muriloIdade < baetaIdade){
-    console.log(muriloIdade +" Murilo é a pessoa mais nova.")
-}
-else if (baetaIdade < carolzitaIdade && baetaIdade < muriloIdade){
-    console.log(baetaIdade +" Baêta é a pessoa mais nova.")
-}
-else if (carolzitaIdade < muriloIdade && carolzitaIdade < baetaIdade){
-    console.log(carolzitaIdade +" Carolzita é a pessoa mais nova.")
-}
+// if (muriloIdade < carolzitaIdade && muriloIdade < baetaIdade){
+//     console.log(muriloIdade +" Murilo é a pessoa mais nova.")
+// }
+// else if (baetaIdade < carolzitaIdade && baetaIdade < muriloIdade){
+//     console.log(baetaIdade +" Baêta é a pessoa mais nova.")
+// }
+// else if (carolzitaIdade < muriloIdade && carolzitaIdade < baetaIdade){
+//     console.log(carolzitaIdade +" Carolzita é a pessoa mais nova.")
+// }
