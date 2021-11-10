@@ -40,14 +40,60 @@
 //     posicao -=1;
 // }
 
-let symbol = '*'
-let n = 5;
-let resultado = "";
+//exercicio 4
+// let symbol = '*';
+// let n = 5;
+// let inputEspaco = "";
+// let positionMeio = (n+1)/2;
+// let positionMeioDir = positionMeio;
+// let positionMeioEsq = positionMeio;
 
-for(let lin = 0; lin < n; lin += 1){
-    for(let col = 0; col < n; col += 1){
-        resultado = resultado + " ";
-    }
+
+// for(let lin = 0; lin <= positionMeio; lin += 1){
+//     for(let col = 0; col <= n; col += 1){
+//         if(col > positionMeioEsq && col < positionMeioDir){
+//             inputEspaco = inputEspaco + symbol
+//         }
+//         else {
+//             inputEspaco = inputEspaco + " "
+//         }
+//     }
+//     console.log(inputEspaco);
+//     inputEspaco = " "
+//     positionMeioDir += 1;
+//     positionMeioEsq -= 1;
     
-    console.log(resultado)
+// }
+
+
+
+
+let symbol = '*';
+let n = 7;
+let inputEspaco = "";
+let positionMeio = (n+1)/2;
+let positionMeioDir = positionMeio;
+let positionMeioEsq = positionMeio;
+
+
+for(let lin = 0; lin <= positionMeio; lin += 1){
+    inputEspaco = "";
+    for(let col = 0; col <= n; col += 1){
+        if(col == positionMeioEsq || col == positionMeioDir || lin == positionMeio ){
+            inputEspaco = inputEspaco + symbol;
+        }
+        else {
+            inputEspaco = inputEspaco + " ";
+        }
+    }
+    positionMeioDir += 1;
+    positionMeioEsq -= 1;
+    console.log(inputEspaco);    
 }
+// Por último, façamos com que a variável seja incrementada com o valor correspondente a cada loop;
+// n = 7
+
+//    *
+//   * *
+//  *   *
+// *******
