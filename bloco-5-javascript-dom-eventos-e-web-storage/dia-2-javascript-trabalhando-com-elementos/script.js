@@ -56,8 +56,41 @@ for(let index = 0; index < array.length; index += 1){
     ul.appendChild(li)
 }
 //exercicio 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
-
 for (let index = 0; index < 3; index += 1) {
     let h3MainFilho = document.createElement('h3')
     main.appendChild(h3MainFilho)
+}
+
+//BONUS
+//exercicio 1 - Adicione a classe title na tag h1 criada;
+h1Filho.className = 'title'
+
+//exercicio 2 - Adicione a classe description nas 3 tags h3 criadas;
+let h3MainFilho = document.querySelectorAll('h3')
+console.log(h3MainFilho)
+for (let index = 0; index < h3MainFilho.length; index += 1){
+    h3MainFilho[index].className = 'description'
+}
+//exercicio 3 - Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+let remove = document.querySelector('.main-content')
+
+remove.removeChild(sectionLeftContent)
+
+
+//exercicio 4 - Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+let style = document.querySelector('.right-content');
+style.style.cssText = 'margin-right: auto';
+
+//exercicio 5 - Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+main.style.backgroundColor = 'green'
+
+
+//exercicio 6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+let removeElementosLista = document.querySelectorAll('li')
+for (let index = 0; index < removeElementosLista.length; index += 1){
+    let removeLi = removeElementosLista[index]
+    if(removeLi.innerText.includes('nove') || removeLi.innerText.includes('dez')){
+        removeLi.remove();
+
+    }
 }
