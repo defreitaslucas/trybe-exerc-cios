@@ -18,14 +18,33 @@ function createDaysOfTheWeek() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   function createDaysOfTheMonth() {
       let diaMes = document.getElementById('days')
-      let li = document.createElement('li');
-      diaMes.appendChild(li)
       for (let index = 0; index < dezDaysList.length; index += 1) {
         let li1 = document.createElement('li');
-        let dias = dezDaysList[index]
-        li1.innerText = dias
-        li1.className = 'day'
-        diaMes.appendChild(li1)
+        let dias = dezDaysList[index];
+        li1.innerText = dias;
+        if (dias == 24 || dias == 31){
+            li1.className = 'day holiday';
+        }
+        else if (dias == 25){
+            li1.className = 'day friday holiday';
+        }
+        else if (dias == 4 || dias == 11 || dias == 18 || dias == 25){
+            li1.className = 'day friday';
+        }
+        else {
+            li1.className = 'day';
+        }
+        diaMes.appendChild(li1);
       }
   }
   createDaysOfTheMonth()
+
+  function holidaysButton(param) {
+    let div = document.querySelector('.buttons-container');
+    let button;
+    button = document.createElement('button');
+    button.innerText = param;
+    button.id = 'btn-holiday';
+    div.appendChild(button);
+  }
+  holidaysButton("Feriados")
