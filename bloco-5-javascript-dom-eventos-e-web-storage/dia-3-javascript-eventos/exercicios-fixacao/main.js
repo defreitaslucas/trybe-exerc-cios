@@ -41,7 +41,7 @@ function colorChangeSpoTrybeFy(evento) {
     if(target == 'mouseover'){
         myWebpage.style.color = 'red'
     }
-    else {
+    else {  
         myWebpage.style.color = 'white'
     }
 }
